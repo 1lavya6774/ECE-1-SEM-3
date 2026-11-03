@@ -16,9 +16,9 @@ const server = http.createServer((req, res) => {
         res.setHeader("Content-Type", "text/html")
         res.end(data)
     })
-})
+});
 const data=fs.readFileSync("index.html")
 console.log(`${data}`);
 server.listen(3000, "127.0.0.1", () => {
     console.log("Server is running on port 3000")
-})
+});
